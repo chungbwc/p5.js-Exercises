@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Electron: Main Process (Global)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "electron",
+      "args": [
+        ".",
+        "--remote-debugging-port=9222"
+      ],
+      "outputCapture": "std",
+      "windows": {
+        "runtimeExecutable": "electron.cmd"
+      }
+    }
+  ]
+}
